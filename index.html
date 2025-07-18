@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Airbnb UI Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="main-header" id="top-before-scroll">
+    <div class="header-top">
+      <div class="logo">airbnb</div>
+      <nav class="menu-tabs">
+        <div class="tab active">
+          <span class="emoji">🏠</span>
+          <span>Homes</span>
+        </div>
+        <div class="tab">
+          <span class="emoji">🎈</span>
+          <span>Experiences</span>
+          <span class="new-badge">NEW</span>
+        </div>
+        <div class="tab">
+          <span class="emoji">🛎️</span>
+          <span>Services</span>
+          <span class="new-badge">NEW</span>
+        </div>
+      </nav>
+      <div class="header-icons">
+        <span class="host">Become a host</span>
+        <div class="circle-icon">🌐</div>
+        <div class="circle-icon">☰</div>
+      </div>
+    </div>
+
+    <div class="search-bar-box">
+      <div class="search-item"><strong>Where</strong><br /><span>Search destinations</span></div>
+      <div class="divider"></div>
+      <div class="search-item"><strong>Check in</strong><br /><span>Add dates</span></div>
+      <div class="divider"></div>
+      <div class="search-item"><strong>Check out</strong><br /><span>Add dates</span></div>
+      <div class="divider"></div>
+      <div class="search-item"><strong>Who</strong><br /><span>Add guests</span></div>
+      <button class="search-btn">🔍</button>
+    </div>
+  </header>
+
+
+  <header class="simple-header" id="top-after-scroll">
+    <div class="logo-area">
+      <span class="logo-text">airbnb</span>
+    </div>
+
+    <div class="search-box">
+      <div class="search-part">
+        <span>Anywhere</span>
+      </div>
+      <div class="divider"></div>
+      <div class="search-part">
+        <span>Anytime</span>
+      </div>
+      <div class="divider"></div>
+      <div class="search-part">
+        <span>Add guests</span>
+      </div>
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="header-icons">
+      <span class="host">Become a host</span>
+      <div class="circle-icon">🌐</div>
+      <div class="circle-icon">☰</div>
+    </div>
+
+  </header>
+
+
+  <section>
+    <h2>Popular homes in Gautam Buddha Nagar</h2>
+    <div class="grid">
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Available in Dehradun this weekend</h2>
+    <div class="grid">
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Stay in Gurgaon District</h2>
+    <div class="grid">
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+      <img src="https://placehold.co/600x400?text=My+Image" />
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h4>Support</h4>
+        <p>Help Centre</p>
+        <p>AirCover</p>
+        <p>Disability support</p>
+      </div>
+      <div>
+        <h4>Hosting</h4>
+        <p>Airbnb your home</p>
+        <p>Hosting resources</p>
+        <p>Join a class</p>
+      </div>
+      <div>
+        <h4>Airbnb</h4>
+        <p>Newsroom</p>
+        <p>Careers</p>
+        <p>Investors</p>
+      </div>
+      <div>
+        <h4>Inspiration</h4>
+        <p>Unique stays</p>
+        <p>Holiday homes</p>
+        <p>Show more</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Airbnb, Inc.</p>
+  </footer>
+  <script>
+    document.getElementById("top-after-scroll").style.display = "none";
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 10) {
+        document.getElementById("top-after-scroll").style.display = "flex";
+        document.getElementById("top-before-scroll").style.display = "none"; 
+      } else {
+        document.getElementById("top-before-scroll").style.display = "block";
+        document.getElementById("top-after-scroll").style.display = "none";
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
